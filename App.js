@@ -11,7 +11,7 @@ function HomeScreen({navigation}) {
   return (
     <ScrollView>
       {examples.map(({name, version}) => (
-        <View>
+        <View key={name}>
           <TouchableOpacity onPress={() => navigation.navigate(name)}>
             <Text>Package: {name}</Text>
             <Text>Version: {version}</Text>
