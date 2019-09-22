@@ -6,11 +6,7 @@ The purpose of this tester app is to facilitate testing of React Native librarie
 
 Typically install your library as a Github dependency, because most libraries do not include example code in the published bundle. ```yarn add your-lib@org/package#tag-or-branch```. If your library requires additional steps pre-publish before it would be usable to a consuming app, run those manually.
 
-Each dependency that has an App.js under `node_modules/<package>/example/App.js` will be included as a menu item. Autolinking is used to include the native code in the tester app. The example code is included based on the availability of the App.ts example entry file. Any native modifications to make the library function, such as permissions, need to be added to the tester app.
-
-### Types
-
-This app assumes the example code has no types and is in plain javascript that would work in a barebones `react-native init` app. The idea is that no type system is required by consumers and corresponding examples should not assume a type system is used by a library consumer.
+Each dependency that has an App.(js|jsx|ts|tsx) under `node_modules/<package>/example/App.(js|jsx|ts|tsx)` will be included as a menu item. Autolinking is used to include the native code in the tester app. The example code is included based on the availability of the App.ts example entry file. Any native modifications to make the library function, such as permissions, need to be added to the tester app.
 
 ## How to use to test your library
 
@@ -22,4 +18,4 @@ The combination of the two above methods allows you to easily test across the co
 
 ## Internals
 
-This app retrieves the example code by checking for the App.js file under example and using a local script to generate the content of the examples list in `exampleList.js`. This steps happens in post install on `yarn` or `npm i`.
+This app retrieves the example code by checking for the App.(js|jsx|ts|tsx) file under example and using a local script to generate the content of the examples list in `exampleList.js`. This steps happens in post install on `yarn` or `npm i`.

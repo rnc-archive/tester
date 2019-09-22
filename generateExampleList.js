@@ -1,17 +1,22 @@
 const packageJson = require('./package.json');
 const fs = require('fs');
 const path = require('path');
+const glob = require('glob');
 
 const exampleListFile = fs.readFileSync('./exampleList.js', 'utf-8');
 
 const getExampleFilePath = name => {
-  return path.join(__dirname, 'node_modules', name, 'example/App.js');
+  return path.join(__dirname, 'node_modules', name, 'example/App');
 };
 
 const exampleExists = Object.entries(packageJson.dependencies).filter(
-  ([key, value]) => {
-    return fs.existsSync(getExampleFilePath(key));
-  },
+  ([key, value]) =>
+    ['ts', 'tsx', 'js', 'jsx']
+      .map(ext =>
+        path.join(__dirname, 'node_modules', key, `example/App.${ext}`),
+      )
+      .map(path => fs.existsSync(path))
+      .some(found => found),
 );
 
 const exampleConfigs = exampleExists.map(([name]) => {
@@ -25,7 +30,7 @@ const exampleConfigs = exampleExists.map(([name]) => {
   return `{
       name: '${name}',
       version: '${libPackageJson.version}',
-      screen: require('${getExampleFilePath(name)}')
+      screen: require('${getExampleFilePath(name)}'),
     }`;
 });
 
