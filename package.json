@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "start": "react-native start",
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
     "test": "jest",
     "lint": "eslint .",
     "postinstall": "jetifier -r && node ./generateExampleList.js"
   },
   "dependencies": {
     "@react-native-community/cameraroll": "react-native-community/react-native-cameraroll#master",
-    "react": "16.8.6",
-    "react-native": "0.60.5",
+    "react": "16.8.1",
+    "react-native": "0.61.3",
     "react-native-device-info": "react-native-community/react-native-device-info#master",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-reanimated": "^1.2.0",
@@ -20,15 +22,15 @@
     "react-navigation-stack": "^1.8.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/runtime": "^7.6.0",
-    "@react-native-community/eslint-config": "^0.0.5",
-    "babel-jest": "^24.9.0",
+    "@babel/core": "^7.5.0",
+    "@babel/runtime": "^7.5.0",
+    "@react-native-community/eslint-config": "^0.0.3",
+    "babel-jest": "^24.1.0",
     "eslint": "^6.4.0",
-    "jest": "^24.9.0",
+    "jest": "^24.1.0",
     "jetifier": "^1.6.4",
-    "metro-react-native-babel-preset": "^0.56.0",
-    "react-test-renderer": "16.8.6"
+    "metro-react-native-babel-preset": "^0.51.1",
+    "react-test-renderer": "16.8.1"
   },
   "jest": {
     "preset": "react-native"
