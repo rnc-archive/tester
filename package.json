@@ -9,6 +9,7 @@
     "postinstall": "jetifier -r && node ./generateExampleList.js"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "bartolkaruza/async-storage#feature/tester-example-compatibility",
     "@react-native-community/cameraroll": "react-native-community/react-native-cameraroll#master",
     "react": "16.8.6",
     "react-native": "0.60.5",
