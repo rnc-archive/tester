@@ -81,6 +81,8 @@ PODS:
     - React-Core (= 0.60.5)
   - React-RCTWebSocket (0.60.5):
     - React-Core (= 0.60.5)
+  - RNDeviceInfo (5.2.1):
+    - React
   - RNGestureHandler (1.4.1):
     - React
   - RNReanimated (1.2.0):
@@ -111,13 +113,14 @@ DEPENDENCIES:
   - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
+  - RNDeviceInfo (from `../node_modules/react-native-device-info`)
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - boost-for-react-native
 
 EXTERNAL SOURCES:
@@ -163,6 +166,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/Libraries/Vibration"
   React-RCTWebSocket:
     :path: "../node_modules/react-native/Libraries/WebSocket"
+  RNDeviceInfo:
+    :path: "../node_modules/react-native-device-info"
   RNGestureHandler:
     :path: "../node_modules/react-native-gesture-handler"
   RNReanimated:
@@ -195,6 +200,7 @@ SPEC CHECKSUMS:
   React-RCTText: b074d89033583d4f2eb5faf7ea2db3a13c7553a2
   React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
   React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
+  RNDeviceInfo: 086e9644cc00dbe9bcf26de2fbcb1d9f475c84d0
   RNGestureHandler: 4cb47a93019c1a201df2644413a0a1569a51c8aa
   RNReanimated: 1b52415c4302f198cb581282a0166690bad62c43
   RNScreens: f28b48b8345f2f5f39ed6195518291515032a788
@@ -202,4 +208,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: bf8ae4d9366aba3056dc6c85820641631cefba54
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.3
