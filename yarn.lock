@@ -836,6 +836,10 @@
     "@types/istanbul-reports" "^1.1.1"
     "@types/yargs" "^13.0.0"
 
+"@react-native-community/async-storage@bartolkaruza/async-storage#feature/tester-example-compatibility":
+  version "1.6.2"
+  resolved "https://codeload.github.com/bartolkaruza/async-storage/tar.gz/17ffe1a0f7ba7567274ca3c310a69c126b483c7a"
+
 "@react-native-community/cameraroll@react-native-community/react-native-cameraroll#master":
   version "1.2.1"
   resolved "https://codeload.github.com/react-native-community/react-native-cameraroll/tar.gz/8c3a108dab3a6f008bde0d440fa10ed306fb19fa"
