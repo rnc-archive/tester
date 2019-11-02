@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@react-native-community/cameraroll": "react-native-community/react-native-cameraroll#master",
+    "@react-native-community/geolocation": "bartolkaruza/react-native-geolocation#feature/example-compatible-with-tester",
     "react": "16.8.6",
     "react-native": "0.60.5",
     "react-native-gesture-handler": "^1.4.1",

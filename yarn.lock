@@ -928,6 +928,10 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
+"@react-native-community/geolocation@bartolkaruza/react-native-geolocation#feature/example-compatible-with-tester":
+  version "2.0.2"
+  resolved "https://codeload.github.com/bartolkaruza/react-native-geolocation/tar.gz/e2adca9343e0c179158813e0778589b0ce341e96"
+
 "@react-navigation/core@^3.5.1":
   version "3.5.1"
   resolved "https://registry.yarnpkg.com/@react-navigation/core/-/core-3.5.1.tgz#7a2339fca3496979305fb3a8ab88c2ca8d8c214d"
