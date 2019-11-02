@@ -838,7 +838,7 @@
 
 "@react-native-community/cameraroll@react-native-community/react-native-cameraroll#master":
   version "1.2.1"
-  resolved "https://codeload.github.com/react-native-community/react-native-cameraroll/tar.gz/4469030e6e5d08109d2497c3b6c662caf0707b9f"
+  resolved "https://codeload.github.com/react-native-community/react-native-cameraroll/tar.gz/8c3a108dab3a6f008bde0d440fa10ed306fb19fa"
 
 "@react-native-community/cli-platform-android@^2.6.0", "@react-native-community/cli-platform-android@^2.9.0":
   version "2.9.0"
