@@ -6,6 +6,10 @@
 	<string>This app wants to see your photos to test the CameraRollManager</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>use location to test react native</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>use location to test react native</string>
 	<key>CFBundleDisplayName</key>
 	<string>RNTester</string>
 	<key>CFBundleExecutable</key>
