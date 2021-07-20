@@ -11,7 +11,7 @@
   "dependencies": {
     "@react-native-community/cameraroll": "react-native-community/react-native-cameraroll#master",
     "react": "16.8.6",
-    "react-native": "0.60.5",
+    "react-native": "0.62.3",
     "react-native-device-info": "react-native-community/react-native-device-info#master",
     "react-native-gesture-handler": "^1.4.1",
     "react-native-reanimated": "^1.2.0",
